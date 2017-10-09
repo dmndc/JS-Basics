@@ -43,7 +43,8 @@ function welcome() {
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+When we declare a function we define their parameters, and when we invoke the function we pass in the arguments.
+
 
 
 //////////////////PROBLEM 5////////////////////
@@ -52,10 +53,16 @@ function welcome() {
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
+Falsy values in Javascript are false, null, undefined, NaN, 0, '' or "".
+These values always coerce to false when evaluated in a boolean context.
 
-  //Answer Here
-
-
+function truthyOrFalse(value) {
+  if (value) {
+    console.log('It\'s truthy!');
+  } else {
+    console.log('It\'s falsy!);
+  }
+}
 
 //////////////////PROBLEM 6////////////////////
 
@@ -63,17 +70,19 @@ function welcome() {
 
 //Create a function called myName that returns your name
 
-  //Code Here
+function myName() {
+  return 'Dino';
+}
   
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
-
+newMyName();
 
 //////////////////PROBLEM 7////////////////////
 
@@ -81,10 +90,15 @@ function welcome() {
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+function outerFn() {
+  return function() {
+    return 'Dino';
+  }
+}
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+innerFn();
