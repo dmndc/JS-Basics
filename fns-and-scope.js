@@ -43,7 +43,7 @@ function welcome() {
 
 //What is the difference between arguments and parameters?
 
-When we declare a function we define their parameters, and when we invoke the function we pass in the arguments.
+// When we declare a function we define their parameters, and when we invoke the function we pass in the arguments.
 
 
 
@@ -53,8 +53,9 @@ When we declare a function we define their parameters, and when we invoke the fu
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
-Falsy values in Javascript are false, null, undefined, NaN, 0, '' or "".
+/** Falsy values in Javascript are false, null, undefined, NaN, 0, '' or "".
 These values always coerce to false when evaluated in a boolean context.
+*/
 
 function truthyOrFalse(value) {
   if (value) {
