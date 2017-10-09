@@ -61,7 +61,7 @@ function truthyOrFalse(value) {
   if (value) {
     console.log('It\'s truthy!');
   } else {
-    console.log('It\'s falsy!);
+    console.log('It\'s falsy!');
   }
 }
 
